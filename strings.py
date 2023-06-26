@@ -12,7 +12,7 @@
 # ut labore et dolore magna aliqua."""
 # print(a)
 
-#Strings are Arrays
+# Strings are Arrays
 # a = "Hello, World!"
 # print(a[1])
 
@@ -36,6 +36,7 @@
 # txt = "The best things in life are free!"
 # print("expensive" not in txt)
 
-txt = "The best things in life are free!"
-if "expensive" not in txt:
-  print("No, 'expensive' is NOT present.")
+# txt = "The best things in life are free!"
+# if "expensive" not in txt:
+#   print("No, 'expensive' is NOT present.")
+
