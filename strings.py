@@ -13,8 +13,8 @@
 # print(a)
 
 # Strings are Arrays
-# a = "Hello, World!"
-# print(a[1])
+a = "Hello, World!"
+print(a[1])
 
 # Looping Through a String
 # for x in "banana":
