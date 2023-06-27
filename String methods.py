@@ -19,6 +19,7 @@ a = "hello python WORLD"
 # x = a.join("banana")
 
 # x = a.ljust(100)
+# x = a.rjust(100)
 # print(x,"hello new code :)")
 
 # x = a.lstrip()
