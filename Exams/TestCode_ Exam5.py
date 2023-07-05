@@ -1,5 +1,5 @@
 def myfunc(input_nums):
-    return(list(input_nums.split(",")))
+    return(input_nums.split(","))
 assert myfunc("10,20,30,40") == ['10', '20', '30', '40']
 
 def myfunc(input_nums):
