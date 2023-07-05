@@ -16,7 +16,7 @@ a = "hello python WORLD"
 # x = a.isspace()
 # x = a.isprintable()
 # x = a.isupper()
-# x = a.join("banana")
+x = a.join("banana")
 
 # x = a.ljust(100)
 # x = a.rjust(100)
@@ -31,4 +31,7 @@ a = "hello python WORLD"
 # x = a.swapcase()
 # x = a.title()
 
-print(x)
+# print(x)
+
+
+print(",".join(x))
