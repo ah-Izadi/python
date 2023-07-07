@@ -5,13 +5,10 @@ sentence = input("Input sentence: ")
 num_letters = 0
 num_numbers = 0
 
-# iterates through sentence and counts how many letters
+# iterates through sentence and counts how many letters and numbers
 for char in sentence:
     if char.isalpha():
         num_letters += 1
-
-# iterates through sentence and counts how many numbers
-for char in sentence:
     if char.isdigit():
         num_numbers += 1
 
