@@ -1,4 +1,5 @@
-def SquareNUM(Num):
-    return(Num*Num)
+class Numbers:
+    def SquareNUM(Num):
+        return(Num*Num)
 
-print(SquareNUM(6))
+print(Numbers.SquareNUM(6))
