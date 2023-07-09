@@ -15,4 +15,3 @@ x=obj.printStr_upper()
 
     
 assert x.isupper()
-     
