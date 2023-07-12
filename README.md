@@ -1,2 +1,2 @@
 # fun with python🐍
-- We love♥ to learn, enjoy, and grow together  
+- We ♥ to learn, enjoy, and grow together  
