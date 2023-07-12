@@ -1,34 +1,40 @@
-def check_password(password):
-    if len(password) < 6 or len(password) > 12:
-        return False
-    lowercase = False
-    uppercase = False
-    number = False
-    special_char = False
-
-    for x in password:
-        if x.islower():
-            lowercase = True
+class Check_Password:
+    def __init__(self,password):
+        self.password = password
         
-        elif x.isupper():
-            uppercase = True
-        
-        elif x.isdigit():
-            number = True
-        
-        elif x in "$#@":
-            special_char = True
+    def first_check_Password(self,r):
+        if len(r) < 6 or len(r) > 12:
+            return False
+        lowercase = False
+        uppercase = False
+        number = False
+        special_char = False
 
-    return lowercase and uppercase and number and special_char
+        for x in r:
+            if x.islower():
+                lowercase = True
+            
+            elif x.isupper():
+                uppercase = True
+            
+            elif x.isdigit():
+                number = True
+            
+            elif x in "$#@":
+                special_char = True
+            elif x in "!%^^&*":
+                special_char = False
 
-def check_passwords(passwords):
-    user_passwords = []
-    for password in passwords:
-        if check_password(password):
-            user_passwords.append(password)
-    return user_passwords
+        return lowercase and uppercase and number and special_char
 
-passwords = input("Enter comma-separated passwords: ").split(',')
-n = check_passwords(passwords)
+    def second_check_password(self):
+        user_passwords = []
+        for y in self.password:
+            if self.first_check_Password(y):
+                user_passwords.append(y)
+        return user_passwords
+
+p1 = Check_Password(input("Enter comma-separated passwords : ").split(","))
+n = p1.second_check_password()
 output = ",".join(n)
 print(output)
