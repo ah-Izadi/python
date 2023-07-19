@@ -18,7 +18,7 @@ class phone:
                     flag = True
             if flag:        
                 for k,v in self.phoneDict.items():
-                    if v in userInput:
+                    if v in userInput or k in userInput:
                         print("*********************************************")
                         print(Fore.BLUE +" contact name is: "+ k+", and it`s phone Number is: "+v)
 
@@ -34,7 +34,7 @@ class phone:
 ph = phone(phoneDict={})
 
 while True:
-    Input_user = input(Fore.GREEN + "1 = Search user or number:\n2 = save a new contact:\n3 = show contacts and phoneNumbers:\n4 = EXIT:\n ")
+    Input_user = input(Fore.GREEN + "1 = Search user or number:\n2 = save a new contact:\n3 = show contacts and phoneNumbers:\n4 = EXIT:\n")
     
     if Input_user == "2":
         print(Fore.LIGHTYELLOW_EX + "*********************************************")
@@ -49,7 +49,7 @@ while True:
     
     if Input_user == "3":
         print(Fore.LIGHTRED_EX + "*********************************************")
-        print(Fore.GREEN + ph.Prt())
+        print(ph.Prt())
         print(Fore.LIGHTYELLOW_EX + "*********************************************")
     
     if Input_user == "4":
